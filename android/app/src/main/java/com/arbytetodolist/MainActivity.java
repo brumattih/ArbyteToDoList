@@ -14,6 +14,7 @@ public class MainActivity extends ReactActivity {
   @Override
   protected String getMainComponentName() {
     return "ArbyteToDoList";
+  }
 
 @Override
   protected ReactActivityDelegate createReactActivityDelegate() {
