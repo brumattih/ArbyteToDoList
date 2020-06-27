@@ -21,7 +21,8 @@ export default props => {
 
     const getRightContent = () => {
         return (
-            <TouchableOpacity style={styles.right}>
+            <TouchableOpacity style={styles.right}
+            onPress= {() => props.onDelete && props.onDelete(props.id)}>
                 <Icon name='trash' size={30} color='#FFF'/>
                 
             </TouchableOpacity>
@@ -67,6 +68,7 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         alignItems: 'center',
         paddingVertical: 10,
+        backgroundColor: '#FFF'
     },
 
     checkContainer: {
